@@ -57,6 +57,7 @@ public class UniversalLinksPlugin extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, CordovaArgs args, CallbackContext callbackContext) throws JSONException {
+        Log.d("UniversalLinks", "Executing UniversalLinks plugin");
         boolean isHandled = true;
         if (JSAction.SUBSCRIBE.equals(action)) {
             subscribeForEvent(args, callbackContext);
